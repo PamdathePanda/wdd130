@@ -84,7 +84,7 @@ h4{
     text-align: center;
 }
 .book, .join{
-    background-color: var(--secondary-color);
+    background-color: #9A9A9A;
     color: var(--accent2-color);
     text-decoration: none;
 }
