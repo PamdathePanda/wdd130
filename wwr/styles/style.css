@@ -204,6 +204,64 @@ nav a:hover{
     box-shadow: 5px 5px 10px #6f7364;
 }
 
+/* */
+
+
+.riverbox{
+    background-color:#7D83FF;
+    display:grid;
+    margin: 0px 10px;
+    grid-template-columns: 100px 300px 100px;
+    grid-template-rows: 150px 350px auto;
+
+}
+.herobox2{
+    width: 100%;
+}
+#hero_img2{
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.river_img{
+    grid-column: 2/3;
+}
+.river_header{
+    grid-column: 1/4;
+}
+.river_img{
+    width:300px;
+    justify-items:center;
+    align-items: center;
+    text-align: center;
+
+}
+#rivergrid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.herobox2{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr;
+}
+
+#hero_text2{
+    font-size: 40px;
+    text-align: center;
+    justify-items: center;
+    grid-row:2/3;
+    grid-column: 2/3;
+}   
+.river_text{
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    margin: 0px auto;
+    grid-column: 1/4;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -244,5 +302,6 @@ nav a:hover{
     }
     footer {
         margin-top: 25px;
+
     }
 }
