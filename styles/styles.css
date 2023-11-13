@@ -1,0 +1,34 @@
+main{
+    background-color: #259DD0;
+
+}
+nav{
+    background-color: #1D3461;
+    font-size: 25px;
+    color: #259DD0;
+    text-align: center;
+    
+}
+nav a{
+    text-align: center;
+    color: #259DD0;
+    text-decoration: none;
+    padding: 35px;
+    font-size: 30px;
+
+}
+nav a:hover{
+    background-color: var(--accent2-color);
+    color: #B46DBB  ;
+}
+body{
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    background-color:#CFBAE1 ;
+}
+#websites{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+}
+
