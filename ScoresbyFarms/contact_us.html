@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>ScoresbyFarms|Our Story</title>
+</head>
+<header>
+    <a id = "logo_link" href="index.html">
+        <img src="images/logo316.png" alt="ScoresbyFarms Logo">
+    </a>
+    <H2>ScoresbyFarms</H2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href='our_story.html'>About Us</a>
+        <a href="contact_us.html">Contact Us</a>
+    </nav>
+</header>
+
+
+<body>
+    <h2 id="Banner"> Contact Us</h2>
+    <section id="Details">
+        <img src="images/contact_us.jpg">
+        <p>
+            "We regret to inform you that our fruit stand does not have a phone. The best way to reach us is by visiting the stand in person. We welcome conversations and encourage you to share any concerns or feedback. Your satisfaction is important to us, and we are eager to work with you to address any issues you may have. Thank you for your understanding and support!"
+        </p>
+        <p>
+            Hours
+            Wednesday - Saturday 8am - 7pm
+        </p>
+    </section>
+    <section id="Email Form">
+        <p>
+            Stay connected with Scoresby Farms by signing up for our weekly email list! Joining is your ticket to a virtual stroll through our fruitful fields every week. Receive timely updates on the freshest produce available at the Fruit Stand, our operating hours for the week, and any weather-related closures due to rain. Stay in the loop and let the bountiful beauty of Scoresby Farms come directly to your inbox. Sign up today to ensure you never miss a moment of our farm-fresh goodness!
+        </p>
+        <div id="Email-Form">
+            <img src="images/text_bubble.jpg">
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                      <label for="mail">Email:</label>
+                      <input type="email" id="mail" name="user_email" />
+                    </li>
+                  </ul>
+                  <li class="button">
+                    <button type="submit">Sign Up</button>
+                  </li>
+            </form>
+            
+        </div>
+    </section>
+</body>
+
+
+
+<footer>
+    <a href="index.html">
+        <img src="images/logo64.png" alt="ScoresbyFarms Logo">
+        <h2>
+            ScoresbyFarms &copy; 2023 
+        </h2> 
+    </a>
+
+    <p>
+        Hours
+        Wednesday - Saturday 8am - 7pm
+    </p>
+    <nav>
+        <a href="https://www.facebook.com/Scoresbyfarmsinc/">
+            <img src="images/facebook.png" alt="facebook">
+        </a>
+        <a href="https://maps.app.goo.gl/pBMeg43HBKBkzE9K7">
+            <img src="images/googlemaps.jpg" alt="Google Maps">
+        </a>
+        <a href="/ScoresbyFarms/site-plan-scoresbyfarms.html">
+            <h1>Site-Plan</h1>
+        </a>        
+    </nav>
+
+
+
+</footer>
+
+<script>
+    // get the feedback div element so we can do something with it.
+    const feedbackElement = document.getElementById('feedback');
+    // get the form so we can read what was entered in it.
+    const formElement = document.forms[0];
+    // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+    formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+        e.preventDefault();
+        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+        feedbackElement.innerHTML = 'Thank you for Joining the Email List!';
+        // make the feedback element visible.
+        feedbackElement.style.display = "block";
+        // add a class to move everything down so our message doesn't cover it.
+        document.body.classList.toggle('moveDown');
+    });
+</script>
+
+</html>
