@@ -230,7 +230,7 @@ header a{
   text-align: center;
   margin: auto auto;
 }
-#hours{
+#contact_us_hours{
   margin:auto;
   margin-bottom: 12%;
   text-align: center;
@@ -240,7 +240,7 @@ header a{
 
 }
 
-#hours h1{
+#hours h2{
   font-size: calc(0.5rem + 1vw) ;
 }
 
