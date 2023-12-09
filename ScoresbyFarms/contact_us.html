@@ -9,6 +9,7 @@
 
 
 <body>
+    <section id="content">
     <header>
         <section id="header_content">
             <a id = "logo_link" href="index.html">
@@ -22,26 +23,31 @@
             </nav>
         </section>
     </header>
-
-    <h2 id="Banner"> Contact Us</h2>
-    <section id="Details">
-        <img src="images/contact_us.jpg">
-        <p>
-            "We regret to inform you that our fruit stand does not have a phone. The best way to reach us is by visiting the stand in person. We welcome conversations and encourage you to share any concerns or feedback. Your satisfaction is important to us, and we are eager to work with you to address any issues you may have. Thank you for your understanding and support!"
+        <h2 id="Banner"> Contact Us</h2>
+    <section id="info_box">
+        <img id="img1" src="images/contact_us.jpg">
+        <p id="info">
+            We regret to inform you that our fruit stand does not have a phone. The best way to reach us is by visiting the stand in person. We welcome conversations and encourage you to share any concerns or feedback. Your satisfaction is important to us, and we are eager to work with you to address any issues you may have. Thank you for your understanding and support!
         </p>
-        <p>
-            Hours
-            Wednesday - Saturday 8am - 7pm
-        </p>
-    </section>
-    <section id="Email Form">
+        <section id="hours">
+            <h1>Hours</h1>
+            <p>
+                Wednesday - Saturday 
+            </p>
+            <p>
+                8am - 7pm
+            </p>
+        </section>
+    </section>  
+    <section id="email_form">
+        <h2 id="email_banner"> Sign Up For our Email List</h2>
         <p>
             Stay connected with Scoresby Farms by signing up for our weekly email list! Joining is your ticket to a virtual stroll through our fruitful fields every week. Receive timely updates on the freshest produce available at the Fruit Stand, our operating hours for the week, and any weather-related closures due to rain. Stay in the loop and let the bountiful beauty of Scoresby Farms come directly to your inbox. Sign up today to ensure you never miss a moment of our farm-fresh goodness!
         </p>
-        <div id="Email-Form">
+        <div id="email_info">
             <img src="images/text_bubble.jpg">
             <div id="feedback"></div>
-            <form action="/my-handling-form-page" method="post">
+            <form id="form"action="/my-handling-form-page" method="post">
                 <ul>
                     <li>
                       <label for="mail">Email:</label>
@@ -55,33 +61,35 @@
             
         </div>
     </section>
+    <footer>
+        <section ID="footer_grid">
+            <img id="footer_logo" src="images/logo128.png" alt="ScoresbyFarms Logo">
+            <h2 id="copyright">
+                ScoresbyFarms &copy; 2023 
+            </h2>
+            <p id="hours">
+                Hours
+                Wednesday - Saturday 8am - 7pm 
+            </p>
+            <nav id="footer_nav">
+                <a href="https://www.facebook.com/Scoresbyfarmsinc/">
+                    <img src="images/facebook.png" alt="facebook">
+                </a>
+                <a href="https://maps.app.goo.gl/pBMeg43HBKBkzE9K7">
+                    <img src="images/googlemaps.jpg" alt="Google Maps">
+                </a>
+                <a href="site-plan-scoresbyfarms.html">
+                    <img id="siteplan_img"src="images/SitePlan_Img.png" alt="Site-Plan">
+                </a>        
+            </nav>
+        </section>
+    </footer>
+    </section>
 </body>
 
 
 
-<footer>
-    <section ID="footer_grid">
-        <img id="footer_logo" src="images/logo128.png" alt="ScoresbyFarms Logo">
-        <h2 id="copyright">
-            ScoresbyFarms &copy; 2023 
-        </h2>
-        <p id="hours">
-            Hours
-            Wednesday - Saturday 8am - 7pm 
-        </p>
-        <nav id="footer_nav">
-            <a href="https://www.facebook.com/Scoresbyfarmsinc/">
-                <img src="images/facebook.png" alt="facebook">
-            </a>
-            <a href="https://maps.app.goo.gl/pBMeg43HBKBkzE9K7">
-                <img src="images/googlemaps.jpg" alt="Google Maps">
-            </a>
-            <a href="site-plan-scoresbyfarms.html">
-                <img id="siteplan_img"src="images/SitePlan_Img.png" alt="Site-Plan">
-            </a>        
-        </nav>
-    </section>
-</footer>
+
 
 <script>
     // get the feedback div element so we can do something with it.
