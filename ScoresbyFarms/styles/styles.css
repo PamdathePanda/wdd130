@@ -288,27 +288,20 @@ footer{
   justify-items: center;
   align-items: center;
 }
-#siteplan_img{
-  width: 21%;
-}
 
-
-
-
-
-
-
-
-
-a {
+footer a {
+  margin: 5px;
   text-decoration: none;
   display: inline-block;
-  padding: 8px 16px;
 }
 
-a:hover {
+footer a:hover {
   background-color: #B7B7A4;
   color: black;
+}
+footer nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .previous {
@@ -328,6 +321,14 @@ a:hover {
 #next{
   margin:2%;
 }
+
+#footerImg3{
+  width: 10%;
+}
+#siteplan_img{
+  width: 64px;
+}
+
 /* *//* Form STUFF*/ /* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* *//* */
 form {
     /* Center the form on the page */
@@ -384,6 +385,9 @@ form {
   
   .button {
     /* Align buttons with the text fields */
+    text-align: center;
+    list-style: none;
+    outline: 2px solid transparent;
     padding-left: 90px; /* same size as the label elements */
   }
   
